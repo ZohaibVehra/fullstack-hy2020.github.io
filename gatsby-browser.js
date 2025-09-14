@@ -1,4 +1,7 @@
 import { anchorate } from 'anchorate';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 export { default as wrapPageElement } from './wrapPageElement';
 export { default as wrapRootElement } from './wrapRootElement';
